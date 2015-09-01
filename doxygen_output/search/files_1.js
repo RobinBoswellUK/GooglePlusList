@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['htmltools_2ejs',['HtmlTools.js',['../_html_tools_8js.html',1,'']]]
+  ['htmltools_2ejs',['htmlTools.js',['../html_tools_8js.html',1,'']]]
 ];

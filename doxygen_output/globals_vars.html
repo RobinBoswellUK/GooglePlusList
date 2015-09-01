@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -98,7 +99,7 @@ $(document).ready(function(){initNavTree('globals_vars.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,11 +113,17 @@ $(document).ready(function(){initNavTree('globals_vars.html','');});
 <li>builder
 : <a class="el" href="notes_8txt.html#aaa0d0cb968ee8d87aa60fb6274f6b347">notes.txt</a>
 </li>
+<li>documents
+: <a class="el" href="notes_8txt.html#a46dc3d7e0a556bcdbd2660ea8fe19aa2">notes.txt</a>
+</li>
 <li>onload
 : <a class="el" href="code_behind_8js.html#a43397fd3516cd230995b3edbbadff48b">codeBehind.js</a>
 </li>
+<li>pages
+: <a class="el" href="notes_8txt.html#a9344f8592162369bf4502552234789a7">notes.txt</a>
+</li>
 <li>works
-: <a class="el" href="notes_8txt.html#a19247a7c9c9c97303552661ccaa7bc5b">notes.txt</a>
+: <a class="el" href="notes_8txt.html#a4d82c0f49284efb75a39e3aec7e0ed87">notes.txt</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -124,7 +131,7 @@ $(document).ready(function(){initNavTree('globals_vars.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Aug 28 2015 16:13:43 for Google Plus List by
+    <li class="footer">Generated on Tue Sep 1 2015 13:19:03 for Google Plus List by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

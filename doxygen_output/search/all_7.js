@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tablegrid',['TableGrid',['../_html_tools_8js.html#a3cfe4b59f1e3bba4ae414740a31474f0',1,'HtmlTools.js']]]
+  ['pages',['pages',['../notes_8txt.html#a9344f8592162369bf4502552234789a7',1,'notes.txt']]],
+  ['posttoast',['postToast',['../cross_browser_8js.html#a4ce2973f58803d6e997c23d93462c2d4',1,'crossBrowser.js']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notes_2etxt',['notes.txt',['../notes_8txt.html',1,'']]]
+  ['log',['log',['../cross_browser_8js.html#ab76235f716ba37e814642e658f830d55',1,'crossBrowser.js']]]
 ];
