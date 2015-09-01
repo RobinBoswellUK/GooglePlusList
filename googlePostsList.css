@@ -1,0 +1,61 @@
+.list_container {
+  background-color: #ADD8E6;
+  width: 60em;
+  height: 34px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.post_tags {
+  float:left;
+  width:36%;
+}
+
+.hashtag_button {
+  background-color: #EEE;
+  border-color: #DDD;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 0px;
+
+  color: #427FED;
+
+  display: inline-block;
+
+  float: right;
+  font-family: Roboto, arial, sans-serif;
+
+  text-align: center;
+
+  line-height: 16px;
+
+  margin-top:0;
+  margin-bottom:0;
+  margin-right:4px;
+
+  padding:4px;
+}
+
+
+.post_title {
+  display: inline-block;
+
+  font-family: Roboto, arial, sans-serif;
+
+  text-align: left;
+  
+  line-height: 16px;
+  
+  width: 60%;
+  margin:0px;
+  padding-top:4px;
+}
+
+.post_title>a {
+  color:#404040;
+
+  font-style: italic;
+  font-weight: normal;
+
+  text-decoration: none;
+}
