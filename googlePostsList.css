@@ -1,61 +1,85 @@
+/* ********* look - style section ********* */
+
 .list_container {
-  background-color: #ADD8E6;
-  width: 60em;
-  height: 34px;
+  clear: left;
   font-size: 16px;
   line-height: 16px;
+  margin-bottom: 16px;
 }
 
+/* post tags - container - look */
 .post_tags {
-  float:left;
-  width:36%;
+  display: inline-block;
+  vertical-align: top;
 }
 
+/* hash tag button - look */
 .hashtag_button {
   background-color: #EEE;
   border-color: #DDD;
   border-radius: 4px;
   border-style: solid;
   border-width: 0px;
-
-  color: #427FED;
-
   display: inline-block;
-
-  float: right;
+  color: #427FED;
   font-family: Roboto, arial, sans-serif;
-
   text-align: center;
-
   line-height: 16px;
-
-  margin-top:0;
-  margin-bottom:0;
-  margin-right:4px;
-
-  padding:4px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 4px;
+  padding: 4px;
 }
 
-
+/* post titles - container - contains a link */
 .post_title {
   display: inline-block;
-
   font-family: Roboto, arial, sans-serif;
-
+  line-height: 22px;
+  margin: 0px;
+  padding-left: 4px;
+  padding-top: 4px;
   text-align: left;
-  
-  line-height: 16px;
-  
-  width: 60%;
-  margin:0px;
-  padding-top:4px;
+  vertical-align: top;
 }
-
 .post_title>a {
-  color:#404040;
-
+  color: #404040;
   font-style: italic;
-  font-weight: normal;
-
+  font-weight: bold;
   text-decoration: none;
 }
+
+/* *************** responsive ************* */
+
+/* full-size */
+  .list_container {
+    width: 40em;
+  }
+ 
+  .post_tags {
+    text-align: right;
+    width: 30%;
+  }
+
+  .post_title { 
+    width: 60%;
+  }
+
+/* scale down - use all space, switch to one column */
+@media screen and (min-width:0em) and (max-width:40em){
+
+  .list_container {
+    width: 100%;
+  }
+ 
+  .post_tags {
+    text-align: left;
+    width: 100%;
+  }
+
+  .post_title { 
+    width: 100%;
+  }
+}
+
+
