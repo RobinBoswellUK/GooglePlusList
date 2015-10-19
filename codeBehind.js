@@ -74,14 +74,3 @@ Design Brainstorming and evaluation technique </a>
 
 } //eof-onload
 
-
-/*
- *   Data for JSON list
- *
- *
- */
-var myPostList = [
-  {tagList:["tag1","tag3"], title: "Title1" , link:"https://plus.google.com/+DoctorbobapplicationsCoUk/posts/15z5ApKvfcN" },
-  {tagList:["tag1","tag2"], title: "Title2" , link:"https://plus.google.com/+DoctorbobapplicationsCoUk/posts/15z5ApKvfcN" }
-];
-
