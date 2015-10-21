@@ -11,7 +11,10 @@
  *   function <b>log</b> base function for logging can be enhanced
  *   @param	string	message to log
  */
-function log(message){ alert(message); }
+function log(message){
+	if(window.console) console.log(message)
+	else alert(message)
+}
 
 /**
  *   function <b>postToast</b> base function for toasting can be enhanced
