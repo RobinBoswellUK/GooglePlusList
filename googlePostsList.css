@@ -34,7 +34,6 @@
 /* post titles - container - contains a link */
 .post_title {
   display: inline-block;
-  font-family: Roboto, arial, sans-serif;
   line-height: 22px;
   margin: 0px;
   padding-left: 4px;
@@ -44,6 +43,7 @@
 }
 .post_title>a {
   color: #404040;
+  font-family: Roboto, arial, sans-serif;
   font-style: italic;
   font-weight: bold;
   text-decoration: none;

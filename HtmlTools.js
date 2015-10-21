@@ -7,34 +7,34 @@
 /**
  * Function for html building, wraps any string
  *
- * @param   s   string to be wrapped
- * @param   pre prefix
- * @param   suf suffix
+ * @param   s       string to be wrapped
+ * @param   prefix  prefix
+ * @param   suffix  suffix
  */
-function HtmlBuilder_wrap(s, pre, suf){
-    return  "<"+pre+">"+s+"</"+suf+">"
+function HtmlBuilder_wrap(s, prefix, suffix){
+    return  "<"+prefix+">"+s+"</"+suffix+">"
 }
 
 /**
  * Function for html building, wraps and string with a tag
  *
- * @param   s   string to be wrapped
- * @param   e   string specifying element 
+ * @param   s         string to be wrapped
+ * @param   element   string specifying element 
  */
-function HtmlBuilder_element(s, e){
-    return  "<"+e+">"+s+"</"+e+">"
+function HtmlBuilder_element(s, element){
+    return  "<"+element+">"+s+"</"+element+">"
 }
 
 /**
  * Function for html building, wraps each element in an array
  *
- * @param   a   array to be wrapped
- * @param   pre prefix
- * @param   suf suffix
- */function HtmlBuilder_wrapArray(a, pre, suf){
+ * @param   a       array to be wrapped
+ * @param   prefix  prefix
+ * @param   suffix  suffix
+ */function HtmlBuilder_wrapArray(a, prefix, suffix){
     s = "";
     for (var i=0; i<a.length; i++){
-        s += pre + a[i] + suf
+        s += prefix + a[i] + suffix
     }
     return s
 }
@@ -54,7 +54,7 @@ function HtmlBuilder_element(s, e){
  * <p>Maintains a block for building the string
  *
  */
-function  TableGrid(){
+function TableGrid(){
     this.linebuilder
     this.linePrefix
     this.lineSuffix
@@ -76,11 +76,11 @@ function  TableGrid(){
      
     /**
      *    function <b>buildRows</b> to do the line build
-     *    will loop over the top layer and pass item sto line builder
+     *    will loop over the top layer and pass each item to line builder
      *  @param  table   data to be wrapped
      */
     this.buildRows=function(table){
-        //will loop over the top layer and pass item sto line builder
+        //will loop over the top layer and pass each item to line builder
         for(var i=0; i<table.length; i++){
             tg.buildLine(table[i])
         }

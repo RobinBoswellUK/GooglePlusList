@@ -1,16 +1,17 @@
 window.onload = function(){
 
-//start the table grid
+// ********************************************
+// do simple example
 var htmlString=""
 
 //add the header
 htmlString+="<table>\n"
 
-// ********************************************
 function myLineBuilder(ins){
     return HtmlBuilder_wrapArray(ins,"<td>","</td>")
 }
 
+//start the table grid
 tg = new TableGrid()
 tg.setLineBuilder(myLineBuilder, "\t<tr>", "</tr>\n")
 
@@ -25,15 +26,13 @@ htmlString+= tg.getBlock()
 //add footer
 htmlString+="</table>"
 
-//log(htmlString)
+//$("result").innerHTML = htmlString
 
 // *******************************************
-//do the new block
+// do a list
 htmlString = ''
 
-
 function myGridLineBuilder(data){
-//   <span class="hashtag_button"> #drawtoast </span>
     s = '\n\t<div class="post_tags">\n\t\t'
     s += HtmlBuilder_wrapArray(data.tagList, ' <span class="hashtag_button">', '</span>')
     s += '\n\t</div>'
@@ -45,32 +44,13 @@ function myGridLineBuilder(data){
 }
 
 tg = new TableGrid()
-//tg.setLineBuilder( myGridLineBuilder, '\t<div class="post_tags">\n', '\t</div>\n')
 tg.setLineBuilder( myGridLineBuilder, '\n<div class="list_container">', '\n</div>')
 //add the lines block
 tg.buildRows(myPostList)
-htmlString+= tg.getBlock()
-//add footer
-htmlString+= '</div>'
+htmlString += tg.getBlock()
 
-//log(htmlString)
 //$("result").textContent = htmlString
 $("result").innerHTML = htmlString
-
-/*
- <div class="list_container">
-
-  <div class="post_tags">
-    <span class="hashtag_button"> #drawtoast </span>
-  </div>
-  <div class="post_title">
-    <a class="post_title" href="https://plus.google.com/+DoctorbobapplicationsCoUk/posts/15z5ApKvfcN"> 
-Design Brainstorming and evaluation technique </a>
-  </div>
-  
-</div>
-*/
-// *******************************************
 
 } //eof-onload
 
