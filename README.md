@@ -4,21 +4,18 @@
 
 #Introduction
 
-Having been posting to Google+ I found there was no easy way to search for my posts containing specific tags.
 
-My idea was for a googleplus listing of posts titles and tags.
+    HtmlTools.js - contains a class TableGrid for building tables and grids and populating them from data.
+    googlePostsList.html - this is a simple webpage to demonstrate the UI in this project.
+    googlePostsList.css - accompanying CSS
+    codeBehind.js - uses the TableGrid class for this demo.
+    Data.js - contains the JSON data for this example.
 
-This repository is for a simple UI with and populate it, json data to hold the titles and tags, in future it counld be developed to use the g+ API to obtain some of the data dynamically.
+#CodeProject
+This project was also published as an article on codeproject.
 
-The basic task is to create line builder that can generate the HTML for a table or a grid.
-Hence the main class is TableGrid.
+tag version1
 
-However there are a couple of helper functions included.
-
-The current project uses this to build the UI, and styles with googlePostsList.css.
-
-
-
-
+http://www.codeproject.com/Articles/1035909/TableGrid
 
 
